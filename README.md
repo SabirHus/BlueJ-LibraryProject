@@ -1,62 +1,62 @@
 # Library Management System
 
-A high-fidelity Java simulation of a library ecosystem, centered on hierarchical inheritance, modular design, and robust data management. This system provides a centralized engine for the storage, retrieval, and reservation of diverse media types.
+A Java simulated library ecosystem, based on extensive hierarchical inheritance, modular design, and robust data management. This system offers a centralized processor of storing, retrieval, and reservation of various types of media.
 
 ---
 
 ## Technical Architecture
 
-The system utilizes an extensive object-oriented hierarchy to manage a variety of library assets with efficiency and scalability.
+It is an object-oriented hierarchy-based system to efficiently and scalably manage various library assets.
 
-### Core Management Engine (`Library.java`)
-* **Efficient Data Structures**: Leverages `HashMap` and `HashSet` to achieve **O(1) time complexity** for accessing items and users.
-* **Intelligent ID Generation**: Implements a collision-resistant algorithm for unique User IDs and automated sequence numbering for reservations.
-* **Flexible Persistence**: Features a dynamic, flag-based file reader capable of ingesting mixed-type records (Books, CDs, DVDs, and Users) from a single source file.
+Management engine core (Library.java) is an engine core that manages the system's lifecycle within the platform.<|human|>Core Management Engine (Library.java) This is the engine core managing the lifecycle of the system in the platform.
+* **Efficient Data Structures**: Takes advantage of using hashmap and hashset data structures to ensure that access to items and users are done in time complexity of O(1).
+* **Intelligent ID Generation**: Uses collision resistant algorithm in unique User IDs and automated sequence numbering in reservations.
+* **Flexible Persistence**: It has a dynamic flag-based file reader that is able to consume balanced types of records (Books, CDs, DVDs and Users) in one file.
 
 ### Inheritance Model
-The project follows a rigid class hierarchy designed to eliminate code duplication and enforce data integrity:
+The project has a strict class hierarchy that is meant to ensure that there is no duplication of codes and also to enforce data integrity:
 
-* **LibraryItem (Abstract)**: The foundational parent class defining essential attributes for all assets: Title, Item Code, Cost, Times Borrowed, and Loan Status.
+* **LibraryItem (Abstract): This is the parent class containing the basic attributes of all assets including Title, Item Code, Cost, Times borrained, and Loan Status.
 * **Intermediary Classes**:
-    * `PrintedItem`: Manages pagination and publisher data for physical media.
-    * `AudioVisual`: Controls playing time duration for digital media.
-* **Leaf Classes**: Granular, format-specific implementations including `Book`, `CD`, `DVD`, and `Periodical`.
+    * `PrintedItem`: Pagination and publisher data of physical media are handled here.
+    * `AudioVisual`: regulates the time played in digital media.
+* **Leaf Classes: Granular format-specific implementations; such as Book, CD, DVD, Periodical.
 
 ---
 
 ## Key Features
 
-* **Advanced Reservation Logic**: Integrated `Diary` and `LibraryReservation` systems featuring automatic date verification and conflict checking to prevent double-booking.
-* **Robust Date Utility**: A custom `DateUtil` class providing high-quality string-to-date conversions, leap-year calculations, and "days-between" logic.
-* **Polymorphic Reporting**: Utilizes method overriding (e.g., `printDetails()`) across the entire hierarchy to provide context-sensitive data visualization during system audits.
-* **Data Persistence**: Full support for reading and writing User and Reservation data to formatted `.txt` files for long-term storage.
+* **Advanced Reservation Logic A complete and unified system, combining a Diary and a LibraryReservation system with automatic date verification and conflict resolution to eliminate: double-booking.
+* **Strong Date Utility: A date utility, a custom class, DateUtil, which offers a good-quality string-to-date conversion, leap-year and days-between algorithms.
+* **Polymorphic Reporting - Takes advantage of method overriding (e.g. printDetails) throughout the whole hierarchy to give context sensitive data visualization when auditing the system.
+* **Data Persistence: The ability to read and write User and Reservation data to formatted User and Reservation data in the form of an `.txt file to store over the long term.
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-* **BlueJ IDE**: This project is optimized for the BlueJ environment.
+**BlueJ IDE: This project is BlueJ environment optimized.
 
 ### Initialization
-1.  **Open Project**: Open the project folder in BlueJ.
-2.  **Instantiate**: Right-click the `Library` class and select the constructor to create a new instance.
-3.  **Load Data**: Call the `readData()` method. When the file dialog appears, select a data file (e.g., `items_all.txt`).
+1.  OpenJ: Open the project in BlueJ.
+2.  The fifth step is instantiation, which involves the right-clicking of the Library class and then choosing the constructor to make a new instance.
+3.  Load Data: invoke the readData() method. When it opens the file dialog, one is to choose a data file (e.g., items all.txt).
 
 ---
 
 ## Operations
 
-| Action | Method to Call | Description |
+|Action| Method to Call| Description|
 | :--- | :--- | :--- |
-| **Print Inventory** | `printAll()` | Displays all loaded items and registered users. |
-| **Make Reservation**| `makeLibraryReservation()` | Parameters: `UserID`, `ItemCode`, `StartDate`, and `NoOfDays`. |
-| **View Schedule** | `printDiaryEntries()` | Displays all reservations active during a specified date range. |
+| **Print Inventory** | printAll() | Shows all loaded objects and users registered.
+| make Library reservation make library reservation() This method takes the following parameters: UserID, item code, start date and number of days.
+| `printDiaryEntries()` | `printDiaryEntries()` Shows all the reservations that are active over the period of a chosen time.
 
 ---
 
 ## Project Structure
 
-* **Data Files**: Sample `.txt` files containing formatted records for Books, CDs, DVDs, Periodicals, and Users.
-* **Source Code**: Java files for the core engine, utility classes, and the complete asset inheritance tree.
-* **BlueJ Package**: Configuration files defining class dependencies and the visual editor layout.
+* **Data Files: Template Book, CD, DVD, Periodical and User sample data in formatted.txt files.
+* **Simple Code): Java code to the basic engine, utility classes as well as the entire asset inheritance tree.
+* **BlueJ Package: Files that specify the dependencies of classes and the layout of the visual editor.
