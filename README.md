@@ -6,7 +6,7 @@ A Java simulated library ecosystem, based on extensive hierarchical inheritance,
 
 It is an object-oriented hierarchy-based system to efficiently and scalably manage various library assets.
 
-Management engine core (Library.java) is an engine core that manages the system's lifecycle within the platform.<|human|>Core Management Engine (Library.java) This is the engine core managing the lifecycle of the system in the platform.
+Management engine core (Library.java) is an engine core that manages the system's lifecycle within the platform. Core Management Engine (Library.java) This is the engine core managing the lifecycle of the system in the platform.
 * **Efficient Data Structures**: Takes advantage of using hashmap and hashset data structures to ensure that access to items and users are done in time complexity of O(1).
 * **Intelligent ID Generation**: Uses collision resistant algorithm in unique User IDs and automated sequence numbering in reservations.
 * **Flexible Persistence**: It has a dynamic flag-based file reader that is able to consume balanced types of records (Books, CDs, DVDs and Users) in one file.
@@ -28,10 +28,6 @@ The project has a strict class hierarchy that is meant to ensure that there is n
 * Data Persistence: The ability to read and write User and Reservation data to formatted User and Reservation data in the form of an `.txt file to store over the long term.
 
 ## Getting Started
-
-### Prerequisites
-**BlueJ IDE: This project is BlueJ environment optimised.
-
 ### Initialisation
 1.  OpenJ: Open the project in BlueJ.
 2.  The fifth step is instantiation, which involves the right-clicking of the Library class and then choosing the constructor to make a new instance.
@@ -44,9 +40,3 @@ The project has a strict class hierarchy that is meant to ensure that there is n
 | **Print Inventory** | printAll() | Shows all loaded objects and users registered.
 | make Library reservation make library reservation() This method takes the following parameters: UserID, item code, start date and number of days.
 | `printDiaryEntries()` | `printDiaryEntries()` Shows all the reservations that are active over the period of a chosen time.
-
-## Project Structure
-
-* **Data Files: Template Book, CD, DVD, Periodical and User sample data in formatted.txt files.
-* **Simple Code): Java code to the basic engine, utility classes as well as the entire asset inheritance tree.
-* **BlueJ Package: Files that specify the dependencies of classes and the layout of the visual editor.
