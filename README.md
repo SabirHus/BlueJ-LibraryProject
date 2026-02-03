@@ -1,6 +1,6 @@
 # Library Management System
 
-A Java simulated library ecosystem, based on extensive hierarchical inheritance, modular design, and robust data management. This system offers a centralized processor of storing, retrieval, and reservation of various types of media.
+A Java simulated library ecosystem, based on extensive hierarchical inheritance, modular design, and robust data management. This system offers a centralised processor of storing, retrieval, and reservation of various types of media.
 
 ---
 
@@ -28,7 +28,7 @@ The project has a strict class hierarchy that is meant to ensure that there is n
 
 * **Advanced Reservation Logic A complete and unified system, combining a Diary and a LibraryReservation system with automatic date verification and conflict resolution to eliminate: double-booking.
 * **Strong Date Utility: A date utility, a custom class, DateUtil, which offers a good-quality string-to-date conversion, leap-year and days-between algorithms.
-* **Polymorphic Reporting - Takes advantage of method overriding (e.g. printDetails) throughout the whole hierarchy to give context sensitive data visualization when auditing the system.
+* **Polymorphic Reporting - Takes advantage of method overriding (e.g. printDetails) throughout the whole hierarchy to give context sensitive data visualisation when auditing the system.
 * **Data Persistence: The ability to read and write User and Reservation data to formatted User and Reservation data in the form of an `.txt file to store over the long term.
 
 ---
@@ -36,9 +36,9 @@ The project has a strict class hierarchy that is meant to ensure that there is n
 ## Getting Started
 
 ### Prerequisites
-**BlueJ IDE: This project is BlueJ environment optimized.
+**BlueJ IDE: This project is BlueJ environment optimised.
 
-### Initialization
+### Initialisation
 1.  OpenJ: Open the project in BlueJ.
 2.  The fifth step is instantiation, which involves the right-clicking of the Library class and then choosing the constructor to make a new instance.
 3.  Load Data: invoke the readData() method. When it opens the file dialog, one is to choose a data file (e.g., items all.txt).
